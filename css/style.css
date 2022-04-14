@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sixing: border-box;
+    box-sizing: border-box; 
+    }
+    
+    body {
+        background-color: #17181b;
+    }
+    h1 {
+        text-align: center;
+        color: white;
+    }
+    h4 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    header {
+        padding: 20px 0 0 0;
+        background: #1d2124;
+        text-align: center;
+    }
+    
+    @media (min-width : 750px) {
+        header {
+            text-align: left;
+        }
+    }
+
+/*La seccion de parrafo y al lado la foto*/
+div.noticia {
+    width: 100%;
+    margin: 20px auto;
+    background-color: black;
+    color: #fff;
+    padding: 15px;
+  }
+div.noticia img.derecha {
+    background: gainsboro;
+    float: right;
+    margin-left: 5px;
+  }
+  div.reset {
+    clear: both;
+  }
+  /* acaba la seccion del parrafo y la foto del lado */
+
+/* el nombre de grid va de color corar */
+
+.sociales li{
+display: inline-block;
+
+}
+.sociales a{
+    padding: 10px;
+
+}
+.letra{
+    color: coral;
+}
+
+.grid-item iframe {
+    height: 100%;
+    width: 100%;
+}
+
+/*grids*/
+@media only screen and (min-width: 600px) {
+    .grid-container{
+        color: white;
+        display: grid;
+        border: 2px solid none;
+        
+    
+        /*definir filas con unidades de medida*/
+        grid-template-rows: 150px 150px 150px 150px;
+        /*definir las columnas*/
+        grid-template-columns:1fr 1fr 1fr 1fr ;
+        /*especie de margin entre columnas*/
+        gap: 9px;
+    }
+    
+    .grid-item a{
+        text-decoration: none;
+    }
+    
+    
+    .grid-item:first-child{
+        grid-row:1/4;
+        grid-column: 1/3;
+        border: none;
+          
+    }
+   
+}
+/*fin de grids*/
+
+/*formulario*/
+.contenedor{ 
+
+    background-image: url(../img/Portada.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+} 
+
+    
+        .p-color {
+            color: orange;
+        }
+        .c-contacto {
+            color: #fff;
+        }
+
+        
+        .contenedor .form {
+            background: rgba(0,0,0,.6);
+            width: 460px;
+            max-width: 650%;
+            margin: auto;
+            padding: 5px 35px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-radius: 3px;
+        
+        }
+
+         .contenedor .form .form-label {
+             display: block;
+             color: #ff851b;
+             font-size: 16px;
+             font-family: Roboto;
+             position: relative;
+
+         }
+
+         .contenedor .form .form-input, .form-textarea {
+             background: rgba(0,0,0,.7);
+             border: none;
+             outline: none;
+             border-bottom: 2px solid #ff851b;
+             width: 100%;
+             padding: 10px;
+             margin-bottom: 1px;
+             font-size: 15px;
+             color: #fff;;
+             font-family: Roboto;
+
+         }
+         .contenedor .form .form-textarea {
+             resize: vertical;
+             max-height: 150px;
+             min-height: 50px;
+  }
+
+  .contenedor .form .btn-submit {
+      width: 100%;
+      font-family: Roboto;
+      outline: none;
+      background-color: #ff851b;
+      font-size: 17px;
+      border: none;
+      color: #fff;
+      padding: 15px 0;
+      cursor: pointer;
+      transition: all.5s ease;
+  }
+  .contenedor .form .btn-submit:hover {
+      background-color: #ff851b;
+  }
+
+/*fin del formulario*/
+.section-flexbox{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+  
+
+}
+.flexbox {
+   display: flex;
+    justify-content: space-between;
+   align-items: center;
+   width: 900px;
+   height: 200px;
+}
+    /*footer*/
+.footer{
+    text-align: center;
+    background-color: #4a4a4a;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    }
+    /*fin del footer*/
